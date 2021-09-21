@@ -1,0 +1,672 @@
+body{
+  overflow-x: hidden;
+  font-family: Comfortaa;
+  padding-top: 92px;
+  color:  #18a7e0;
+  text-align: center;
+  text-decoration: none;
+}
+
+h1{
+  color:  #18a7e0;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 26px;
+
+}
+
+h2{
+  color:  #18a7e0;
+  font-size: 1.125em;
+  line-height: 20px;
+  margin-bottom:0px;
+}
+
+h3{
+  color:#675f5d;
+  font-size:1em;
+  margin-top:2px; 
+  margin-bottom:auto;
+  font-weight: 400;
+}
+
+h4{
+  color:  #143f7c;
+  font-size:3.25em;
+  line-height: 50px;
+  font-weight: 700;
+}
+a:focus, a:hover{
+  text-decoration: none;
+  color:  #143f7c;
+}
+a{
+  color:  #18a7e0;
+  text-decoration: none;
+}
+
+.srednie_h2, male_h2{
+  display:none;
+}
+
+duze_h2{
+  display:block;
+}
+.male{
+  display:none;
+}
+.duze{
+  display:block;
+}
+
+/*--------NAVIGATION-----------------*/
+.navbar-default .navbar-nav>li>a{
+  color:  #18a7e0;
+  font-size: 1.125em;
+  line-height: 20px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover, .dane_kontaktowe a:hover, .podo_tab td h2:hover, kos_tab td h2:hover, .kosm_nav a:hover, .kos_tab  h2:hover
+{
+  color:  #143f7c;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .podo_tab td h2:hover, kos_tab td h2:hover, .kosm_nav a:hover
+{
+  color:  #143f7c;
+  background:white;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.trapez{
+  height:92px; 
+  position:absolute;
+}
+
+.nav{
+  height: 92px;
+  display: -webkit-box;     
+  display: -moz-box;         
+  display: -ms-flexbox;      
+  display: -webkit-flex;     
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar-default{
+  background-color:white;
+  border-style: none;
+}
+
+.navbar .navbar-brand{
+  height: 92px;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left:50px;
+}
+
+.nabvar-collapse ul{
+    width:100%;
+}
+
+  .navbar .navbar-brand{
+    width: 100%;
+    padding-left:0;
+    padding-right: 0;
+  }
+  .nav_nakladka{
+    padding-left:0px;
+    padding-right: 00px;
+  }
+/*------SLIDER------------------*/
+
+.slider .col-sm-6{
+  padding:0;
+}
+
+.slider .lewy{
+  margin-right: -8.25%;
+}
+
+.slider .prawy{
+  margin-left: -8.25%;
+}
+
+.slider .row{
+  width: 119.85%;
+  margin-left: 0;
+}
+
+.slider img{
+  position: absolute;
+  width=108.5%;
+}
+
+.lewy:hover img.img12{
+  z-index: 11 !important;
+}
+
+.prawy:hover img.img22{
+  z-index: 11!important;
+}
+
+.o_mnie_slider .prawy{
+  padding-right:50px
+}
+.o_mnie_slider h2{
+  line-height:1.70em
+}
+
+.przycisk{
+  border-style: none;
+  width: 222px;
+  height: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: url(../img/przycisk-ramka2.png);
+  background-size: 100% 100%;
+  margin-left:auto;
+}
+
+.przycisk:hover h3{
+  color: #143f7c !important;
+  font-size:1.25em;
+  font-weight: 700;
+
+}
+
+/*-------KONTATK----------------*/
+.wyroznij{
+  color: #143f7c;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.kontakt_tekst h2{
+  padding-top:12px;
+}
+
+.wprowadz{
+  border-style: none;
+  text-align: center;
+  color:#675f5d;
+  padding-top:3px;
+}
+
+.wprowadz_lewy{
+  background: url("../img/formularz_ramka_2ukosy.png");
+  background-size: 100% 100%;
+  padding-left: 12px;
+  padding-right: 26px;
+  margin-right: -26px;
+  width: 211px;
+  margin-bottom:10px;
+  height: 30px;
+}
+
+.wprowadz_prawy{
+  background: url("../img/przycisk-ramka2.png");
+  background-size: 100% 100%;
+  padding-left: 12px;
+  padding-right: 8px;
+  width: 205px;
+  height: 30px;
+  
+}
+.tresc_wiadomosci{
+  color:#675f5d;
+  text-align: center;
+  vertical-align: center;
+  width:387px;
+  height:8em;
+  resize:none;
+  border-style:solid;
+  border-color: #143f7c;
+  border-width: 1px;
+  margin-left: auto;
+  margin-right:3px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#kontakt_przycisk{
+  margin-top:0 ;
+  width:265px;
+}
+
+/*-------Footer-----------------*/
+.trapez_middle{
+  height:92px; 
+  position:absolute;
+  right:0;
+  padding-right: 15px;
+
+}
+.dane_kontaktowe .row{
+  height:92px; 
+}
+
+.dane_kontaktowe h2{
+  line-height: 26px;
+}
+#map {
+  height: 422.5px;
+}
+/*---------KOSMETOLOGIA-----------------*/
+.kosm_nav{
+  height: 92px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 15px;;
+  padding-right: 60px;
+  font-size: 1.125em;
+}
+
+.kos_opi span h3{
+  text-align: right;
+  font-size: 1.125em;
+  font-weight: 600;
+}
+
+/*---------PODOLOGIA-----------------*/
+.slider_podologia .col-sm-4{
+  padding-right:10px;
+}
+
+.slider_podologia h4{
+  padding-top:15px;
+}
+.slider_podologia h3, .podo_wypis h3{
+  color:  #143f7c;
+  font-size: 1.375em;
+  text-align: center;
+}
+.slider_podologia h2{
+  padding-right: 90px;
+  margin-left: -60px;
+  color:#143f7c;
+  text-align: right
+}
+
+.podo_wypis .row{
+  display: flex;
+  height: 92px;
+}
+.podo_wypis h3{
+  text-align: left;
+  padding-left: 60px;
+}
+.ped_lecz h2{
+  text-align:left;
+}
+
+td{
+   padding-left:60px;
+   padding-top:15px
+}
+
+.aktywny{
+  color:  #143f7c !important;
+  font-size: 1.255em;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.aktywny h2{
+   text-decoration: none;
+}
+.podo_pole h2{
+  text-align: right;
+  color: #143f7c;
+  padding-top: 15px;
+  padding-right: 90px;
+}
+
+.podo_pole{
+  display: flex;
+  align-items: center;
+}
+.podo_tab1 tr:nth-child(even) td h2{
+  color:#143f7c;
+}
+
+/*------------------------------------
+--------------------------------------
+-------------------------------------*/
+
+@media only screen and (max-width: 1200px){
+  .trapez_top{
+    clip: rect(0,500px,500px,66px);
+    margin-left: -66px;
+  }
+  .trapez_middle{
+    clip: rect(0px,348px,500px,0px);
+    margin-right: -60px;
+  }
+  .nav{
+    padding-left:50px;
+  }
+  .tresc_wiadomosci{
+    height: 8em;
+  }
+  .slider .prawy{
+    padding-right:30px
+  }
+  .slider .prawy h2{
+    line-height:1.4em
+  }
+  
+  .slider_podologia h4{
+    padding-top:0px;
+    font-size: 2.5em;
+    line-height: 26px
+  }
+
+  .slider_podologia h2{
+    margin-left: -60px;
+    padding-right: 0px;
+    font-size: 1em;
+  }
+  .podo_pole h2{
+    padding-right: 0px;
+  }
+  .trapez_podo{
+    margin-left: -51px;
+    padding-left: 0px;
+  }
+  .kosm_nav{
+    padding-right:30px
+  }
+
+}
+
+    /*------------------------------------------------------------*/
+@media only screen and (max-width: 993px) {
+  .duze_h2, male_h2{
+    display:none;
+  }
+  .srednie_h2{
+    display:block;
+  }
+  .trapez_top{
+    clip: rect(0,500px,500px,139px);
+    margin-left: -139px;
+  }
+    .trapez_middle{
+    clip: rect(0px,258px,500px,0px);
+    margin-right: -150px;
+  }
+  h1, h2, .navbar-default .navbar-nav>li>a{
+    font-size: 1em;
+    line-height: 18px;
+    padding-left: 0;
+  }
+    .nav{
+    padding-left:10px;
+  }
+  .navbar-default .navbar-nav>li>a{
+    padding-top:8px;
+  }
+  
+  .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav>li>a:hover, .kosm_nav.active>a:hover h2{
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 22px;
+    color:#143f7c;
+  }
+
+   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus , .navbar-default .navbar-nav>.active>a:hover {
+    color:  #143f7c;
+    font-size: 1.125em;
+    line-height: 22px;
+    font-weight: 700;  
+  }
+  a:focus h2, a:hoover, .kos_tab td h2:hover{
+    color:  #143f7c;
+    font-size: 1.125em;
+    line-height: 22px;
+    font-weight: 700;
+  }
+  
+  .o_mnie_slider .prawy{
+    padding-right:0;
+    margin-left: -5.25%;
+  }
+  .slider .prawy h2{
+    line-height:1.15em
+  }
+  .tresc_wiadomosci{
+    height: 6em;
+  }
+  
+  .slider_podologia h4{
+    padding-top:0px;
+    font-size: 1.5em;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .slider_podologia h3{
+    padding-top:0px;
+    font-size: 1.125em;
+    line-height: 16px;
+    margin-top:0;
+  }
+  
+  .slider_podologia h2{
+    margin-left: -165px;
+    padding-right: 0px;
+    font-size: 1em;
+    line-height: 1.15em;
+    padding-top:0;
+    margin-top:5px;
+    margin-right:-10px;
+  }
+  .podo_pole h2{
+    padding-right: 0px;
+  }
+  .podo_wypis h3, td{
+    padding-left:25px;
+  }
+
+  .trapez_podo{
+    clip: rect(0,500px,500px,153px);
+  }
+  
+  .trapez-podo-maly{
+    margin-left: 0;
+  }
+  
+  .aktywny, podo_tab td h2:hover, kos_tab td h2:hover .kosm_nav.active>a:hover,.kos_tab td h2:hover, .kosm_nav a:hover, .podo_tab td h2:hover{
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .kosm_nav {
+    justify-content: space-between;
+    padding-left:0;
+    padding-right: 0;
+  }
+ h2{
+    padding-top:0px !important;
+    margin-top:0px!important;
+  }
+  .wyroznij{
+    line-height: 20px;
+    font-size: 1em;
+  }
+}
+    /*------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  .male{
+    display:block;
+  }
+  .duze{
+    display:none;
+  }
+  
+  .navbar-brand h1{
+    padding-left:20px;
+  }
+  .nav_nakladka{
+    padding-left:0px;
+    padding-right: 50px;
+  }
+  
+  .navbar-toggle{
+    width: 45px;
+    height: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+  }
+  .nav > li{
+    background: white;
+    width: 195px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  .nav{
+    flex-direction: column;
+/*    align-items: right;*/
+  }
+ .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  #kosm-nav {
+    height:397px;
+  }
+  #kosm-nav ul, #kosm-nav li{
+    background: transparent;
+  }
+  .navbar-collapse{
+    height: 92px;
+
+  }
+  .nabvar-collapse.in ul{
+        display: flex;    
+    flex-direction: column;
+  }
+  
+  .dane_kontaktowe .container{
+    background-color: #e3eaf6;
+    background-clip: content-box;
+  }
+  .trapez_middle{
+    display:none;
+  }
+  .dane_kontaktowe .row{
+    flex-direction: column-reverse;
+    display: flex;
+    height:auto;
+  }
+
+  form {
+
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .przycisk{
+    color:#675f5d;
+    font-size:1em;
+    text-align: center;
+    font-weight: 400;
+  }
+  .tresc_wiadomosci1{
+    color:#675f5d;
+    text-align: center;
+    vertical-align: center;
+    width:387px;
+    height:8em;
+    resize:none;
+    border-style:solid;
+    border-color: #143f7c;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right:3px;
+  }
+  .slider_podologia h4{
+    padding-top:10px;
+    font-size: 1.5em;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .slider_podologia h3{
+    padding-top:10px;
+    font-size: 1.125em;
+    line-height: 16px;
+    margin-top:0;
+  }
+  
+  .slider_podologia h2{
+    margin-left: 0;
+    padding-right: 0px;
+    font-size: 1em;
+    line-height: 1.15em;
+    padding-top:10px;
+    margin-top:5px;
+    margin-right:0;
+  }
+}
+    /*------------------------------------------------------------*/
+@media only screen and (max-width: 590px) {
+  body{
+    max-width: 100%;
+  }
+    .nav{
+    margin-top: 90px;
+    margin-left: -157.7%;
+  }
+}
+    /*------------------------------------------------------------*/
+@media only screen and (max-width: 345px) {
+  .trapez_top{
+    margin-left: -185px;
+    clip: rect(0,500px,500px,185px);
+  }
+  .nav_nakladka{
+    padding-left:0px;
+    padding-right: 8px;
+  }
+    .navbar-brand h1{
+    padding-left:0px;
+  
+
+  }

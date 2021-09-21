@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="manifest" href="favicons/site.webmanifest">
+<link rel="shortcut icon" href="favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e3eaf6">
+<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="favicons/browserconfig.xml">
+<meta name="theme-color" content="#e3eaf6">
+
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7zZO8y6GagR-iy-jYA_70ojo1M63DT00&callback=initMap"></script>
+  <link href="./css/style-arkusza.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <title>Podologia&amp;Kosmetologia Joanna Trojak-Pietras</title>
+</head>
+  
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container" style="display:flex;">
+        <img src="./img/TOP_szary%20trapez.png" style="" class="trapez_top trapez">
+        <div class="nav_nakladka  col-sm-4">
+          <a class="navbar-brand" href="#" style="width:100%; margin-left: 0;">
+            <h1>PODOLOGIA &amp; <br>KOSMETOLOGIA</h1>
+            <img src="./img/pogologia_logo_3_paluszki.svg" style="height:2.5em;">
+          </a>
+        </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar" class="navbar-collapse collapse col-sm-8" aria-expanded="true" style="width:67.7777%;">
+          <ul class="nav navbar-nav" style="width:100%">
+		    <li><a href=# >strona<br>główna</a></li>
+            <li><a href="./podstrony/about.html" >o mnie</a></li>
+            <li><a href="./podstrony/bezpieczenstwo.html">bezpieczeństwo</a></li>
+            <li><a href="./podstrony/cennik.html" >cennik</a></li>
+            <li><a href="./podstrony/kontakt.html" >kontakt</a></li>
+            <li><a href="https://www.beautymenago.pl/b/podologiaikosmetologia/login" >zarezerwuj<br>on-line</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="SLIDE duze">
+      <div class="container slider">
+        <div class="row slide_row">
+          <div class="col-sm-6 lewy">
+            <img src="./img/SLIDER_Kosmetologia.png" class="img-responsive img11"  style="z-index: 10">
+            <a href="./podstrony/kosmetologia.html">
+              <img src="./img/SLIDER_Kosmetologia_HOVER.png" class="img-responsive img12"  style="z-index: 9">
+              <img src="./img/SLIDER_Kosmetologia.png" class="img-responsive"  style="z-index: 1; position: relative">
+            </a>
+          </div>
+          <div class="col-sm-6 prawy">
+            <img src="./img/SLIDER_Podologia.png" class="img-responsive img21"  style="z-index: 10">
+            <a href="./podstrony/podologia.html">
+              <img src="./img/SLIDER_Podologia_HOVER.png" class="img-responsive img22"  style="z-index: 9">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="SLIDE male">
+      <div class="container">
+        <a href="./podstrony/kosmetologia.html">
+          <img src="./img/SLIDER_Kosmetologia_trim.png" class="img-responsive">
+        </a>
+        <a href="./podstrony/podologia.html">
+          <img src="./img/SLIDER_Podologia_trim.png" class="img-responsive">
+        </a>
+      </div>
+    </section>
+    
+    
+    <section class="dane_kontaktowe">
+      <div class="container" style="position:relative">
+        <img src="./img/BOTTOM_szary%20trapez.png" class=trapez_middle style="">
+        <div class="row" >
+          <div class=col-sm-4>
+            <h2>adres: ul. piłsudskiego 8a<br>39-310 radomyśl wielki</h2>
+          </div>
+          <div class=col-sm-4 >
+            <h2>telefon: 730 815 986<br>odwiedź mnie na <a href="https://www.facebook.com/PodologKosmetolog/">facebooku</a></h2>
+          </div>
+          <div class=col-sm-4 >
+            <h1>JOANNA<br>TROJAK-PIETRAS</h1>
+
+          </div>      
+        </div>    
+      </div>
+    </section>
+    
+    
+    <section id="mapa">
+      <div class="container">
+		 <div id="map"></div>
+			<script>
+			  function initMap() {
+				var uluru = {lat: 50.194709,  lng: 21.274054};
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 17,
+				  center: uluru,
+                  styles:
+                    [
+    {
+        "featureType": "all",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#85d3f3"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "gamma": 0.01
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "saturation": -31
+            },
+            {
+                "lightness": -33
+            },
+            {
+                "weight": 2
+            },
+            {
+                "gamma": 0.8
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 30
+            },
+            {
+                "saturation": 30
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "all",
+        "stylers": [
+
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "saturation": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 20
+            },
+            {
+                "saturation": -20
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 10
+            },
+            {
+                "saturation": -30
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "saturation": 25
+            },
+            {
+                "lightness": 25
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#143f7c"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": -20
+            }
+        ]
+    }
+]});
+                var customMarker = './images/wskaznik.png';
+				var marker = new google.maps.Marker({
+				  position: uluru,
+				  map: map,
+               
+				});
+			     
+				google.maps.event.addDomListener(window, "resize", function() {
+					var center = map.getCenter();
+					google.maps.event.trigger(map, "resize");
+					map.setCenter(center); 
+				});
+				}
+			</script>
+      </div>
+    </section>
+    
+    
+    
+  </body>
+</html>
